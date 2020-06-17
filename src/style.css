@@ -1,0 +1,80 @@
+body {
+  background-image: url('../src/assets/background.jpg');
+  background-size: cover;
+}
+.ship-box {
+  display: flex;
+}
+.ship-container {
+  height: 150px;
+}
+.player-board-box {
+  position: absolute;
+  left: 20%;
+  top: 5%;
+}
+.player-board {
+  position: relative;
+  width: 400px;
+  display: flex;
+  flex-wrap:wrap;
+}
+.my-space {
+  width: 38px;
+  height: 38px;
+  background: #00b6fff2;
+  border: 1px black solid;
+}
+
+.enemy-board-box {
+  position: absolute;
+  left: 50%;
+  top: 48%;
+}
+.enemy-board {
+  position: relative;
+  width: 400px;
+  display: flex;
+  flex-wrap:wrap;
+}
+.computer-space {
+  width: 38px;
+  height: 38px;
+  background: #00b6fff2;
+  border: 1px black solid;
+}
+.ship-box {
+  display: flex;
+  flex-direction: column;
+}
+
+
+img {
+  position: absolute;
+  z-index: 10;
+}
+
+.fire {
+  background-image: url('../src/assets/fire.png');
+  background-size: 38px 38px;
+  z-index: 110;
+}
+
+.water {
+  background-image: url('../src/assets/water.png');
+  background-size: 38px 38px;
+}
+
+.sunk {
+  background-image: url('../src/assets/sunk.png');
+  background-size: 38px 38px;
+  z-index: 110;
+}
+.failure, .success {
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  z-index: 200;
+}
+
